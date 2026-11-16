@@ -45,6 +45,13 @@
 // and that is in menu.cpp
 #include "menu.h"
 
+/* the saved games; GFOS keeps them in the game drawer's User drawer */
+#ifdef __amigaos__
+#define RAFKILL_SAVE_NAME "User/player%d.rap"
+#else
+#define RAFKILL_SAVE_NAME "player%d.rap"
+#endif
+
 using namespace std;
 #ifndef debug
 #define debug cout<<"File: "<<__FILE__<<" Line: "<<__LINE__<<endl;
@@ -59,7 +66,7 @@ int savePlayer( SpaceObject * player, int game_slot ){
 	printf("Save player\n");
 
 	char filename[ 64 ];
-	snprintf( filename, 64, "player%d.rap", game_slot );
+	snprintf( filename, 64, RAFKILL_SAVE_NAME, game_slot );
 
 	// PlayerHull * hull = dynamic_cast<PlayerHull *>(player->getHull());
 	PlayerHull * hull = (PlayerHull *)(player->getHull() );
@@ -252,7 +259,7 @@ SpaceObject * loadPlayer( int game_slot ){
 	FILE * fv;
 	
 	char filename[ 64 ];
-	snprintf( filename, 64, "player%d.rap", game_slot );
+	snprintf( filename, 64, RAFKILL_SAVE_NAME, game_slot );
 	fv = fopen( filename, "rb" );
 	if ( fv == NULL ){
 		printf("Could not open %s\n", filename );

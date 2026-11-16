@@ -1,0 +1,16 @@
+{
+  "name": "Rafkill",
+  "version": "1.2.4-gfos1",
+  "drawer": "Rafkill",
+  "program": "Rafkill",
+  "cpu": "68040",
+  "fpu": false,
+  "space": 16000000,
+  "modules": [],
+  "keep": [
+    "User"
+  ],
+  "parent": "Work:Games",
+  "badge": "icons/art/rafkill.png",
+  "script": "Install-Rafkill"
+}

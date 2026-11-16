@@ -15,6 +15,9 @@ string getConfigFile(){
 	} else if ( System::onUnix() ){
 		return System::getHomeDirectory() + "/.rafkill";
 	}
+#ifdef __amigaos__
+	return System::getHomeDirectory() + "/" + filename;
+#endif
 	return filename;
 }
 

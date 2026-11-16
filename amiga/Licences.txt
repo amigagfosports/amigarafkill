@@ -1,0 +1,20 @@
+Rafkill: licences
+=================
+
+The game: Rafkill, (c) Jon Rafkind (graphics also by Elton Fry), from
+github.com/kazzmir/rafkill (the author's own repository) at commit
+daecbaa2 (version 1.2.4).
+
+- The game, its code, data and music: GNU Library General Public
+  License version 2 (COPYING.txt). The port's changes to the code (src/)
+  are under it too; the source of this build is in DalsinAI/amigarafkill
+  on GitHub.
+- Libs/allegro4.library (DalsinAI/gfopenallegro) and Libs/acgame.library
+  (DalsinAI/acgame): MIT, Copyright (c) 2026 AmiCradle Team. They are our
+  own Allegro 4 and game libraries, not Allegro's code.
+- The Amiga port's own files (amiga/, AMIGA_PORT.md, package/, tools/
+  lha_archive.py, pack_dist.py and write_part.sh, tests/) are LGPL-2 or
+  later like the game, Copyright (c) 2026 AmiCradle Team. The GlowIcons
+  are drawn from the game's own first hull sprite (data/raptor.dat).
+
+Designed, tested and delivered by The AmiCradle Team.

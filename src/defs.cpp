@@ -161,6 +161,10 @@ const char * Util::getOS() {
 }
 
 string Util::getInstallDirectory(){
+#ifdef __amigaos__
+	/* GFOS: data/ is in the game's own drawer */
+	return string( "PROGDIR:" );
+#endif
 	return string( INSTALL_DIR ) + "/rafkill/";
 }
 

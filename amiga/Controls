@@ -1,0 +1,14 @@
+Rafkill: controls
+=================
+
+From the game's own README (the menus let you change them; they are kept
+in the drawer's User drawer, User/rafkill.config):
+
+  Up        cursor up, keypad 8 or W
+  Down      cursor down, keypad 2, X or S
+  Left      cursor left, keypad 4 or A
+  Right     cursor right, keypad 6 or D
+  Shoot     Space, Return or keypad Enter
+  Switch the accessory weapon   Alt
+
+Score buys weapons and hull parts between levels.

@@ -1,7 +1,9 @@
 #include <allegro.h>
 #include "defs.h"
+#ifndef __amigaos__
 #include <dumb.h>
 #include <aldumb.h>
+#endif
 
 void inc_speed_counter() {
 	Util::speed_counter++;
@@ -34,8 +36,10 @@ void init( int windowMode, int GAME_SPEED ) {
 	reserve_voices (8, -1);
 	set_volume_per_voice( 0 );
 	install_sound( DIGI_AUTODETECT, MIDI_NONE, "" );
+#ifndef __amigaos__
 	atexit( &dumb_exit );
 	dumb_register_packfiles();
+#endif
 
 	LOCK_VARIABLE( speed_counter );
 	LOCK_FUNCTION( (void *)inc_speed_counter );
@@ -46,6 +50,8 @@ void init( int windowMode, int GAME_SPEED ) {
 	get_config_int( "sound", "quality", 2 );
 	Util::sound_vol = 1.0;			  //max volume to begin with
 	// music_vol = 0.50;
+#ifndef __amigaos__
 	dumb_resampling_quality = get_config_int( "sound", "dumb_resampling_quality", 1 );
+#endif
 }
 
