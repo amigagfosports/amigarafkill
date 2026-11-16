@@ -1,7 +1,8 @@
 # Rafkill for GFOS
 
 Rafkill 1.2.4 by Jon Rafkind (LGPL-2), from the author's own
-https://github.com/kazzmir/rafkill at commit daecbaa2, built for
+https://github.com/kazzmir/rafkill at commit
+daecbaa72f51d940b550051a34245ade6c6966ad, built for
 AmigaOS 3.2 / GFOS on a 68040, 68060 or 68080. No FPU is needed.
 
 A vertical shoot-em-up in the style of Raptor and Tyrian: fly up an alien

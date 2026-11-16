@@ -3,7 +3,7 @@ Rafkill: licences
 
 The game: Rafkill, (c) Jon Rafkind (graphics also by Elton Fry), from
 github.com/kazzmir/rafkill (the author's own repository) at commit
-daecbaa2 (version 1.2.4).
+daecbaa72f51d940b550051a34245ade6c6966ad (version 1.2.4).
 
 - The game, its code, data and music: GNU Library General Public
   License version 2 (COPYING.txt). The port's changes to the code (src/)
